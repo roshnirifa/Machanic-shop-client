@@ -1,0 +1,20 @@
+.title {
+    color: #FDB819;
+    font-weight: bolder;
+}
+
+.title:hover {
+    background-color: #212121;
+}
+
+ul li:hover {
+    background-color: #212121;
+    color: white;
+    border-radius: 10px;
+
+}
+
+ul li {
+    margin-right: 10px;
+
+}
