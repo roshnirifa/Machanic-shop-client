@@ -12,14 +12,13 @@ import Branding from './Branding/Branding';
 const Home = () => {
     return (
         <div>
-            <Header></Header>
+
             <Banner></Banner>
             <Branding></Branding>
             <OurTools></OurTools>
             <BusinessSummery></BusinessSummery>
             <Review></Review>
             <Contact></Contact>
-
             <Footer></Footer>
 
         </div>
