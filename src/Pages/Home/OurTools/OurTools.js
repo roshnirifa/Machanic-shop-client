@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import useTools from '../../useTools/useTools';
+
 import Tools from '../Tools/Tools';
 
 const OurTools = () => {
-    const [tools, setTools] = useState([])
-    useEffect(() => {
-        fetch('ourTools.json')
-            .then(res => res.json())
-            .then(data => setTools(data))
-    }, [])
+    const { tools } = useTools();
+
     return (
         <div className='px-20'>
             <h1 className='text-5xl text-primary text-center font-bold my-7'>Our Tools</h1>

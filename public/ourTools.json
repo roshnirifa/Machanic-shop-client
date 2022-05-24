@@ -4,41 +4,47 @@
         "price": "$250",
         "quantity": "10",
         "description": "ENGINE MAINTENANCE KIT (VW-MK-3445221)",
-        "img": "https://gaadilovers.com/wp-content/uploads/2020/04/pic-19.jpg"
+        "img": "https://gaadilovers.com/wp-content/uploads/2020/04/pic-19.jpg",
+        "review": "Good product, easy to use. Price is lower than market. Recomanded"
     },
     {
         "name": "Oil Filter",
         "price": "$987",
         "quantity": "10",
         "description": "PREMIUM QUALITY OIL FILTER (TQ-003)",
-        "img": "https://gaadilovers.com/wp-content/uploads/2020/04/pic-19.jpg"
-    },
-    {
-        "name": "Braking Blocks",
-        "price": "$345",
-        "quantity": "10",
-        "description": "Braking Blocks (MAINTENANCE KIT)",
-        "img": "https://temp3.elwebcreative.com/wp-content/uploads/2016/06/prod_12_deposit_opt_-3.jpg"
-    },
-    {
-        "name": "Silencer 200",
-        "price": "$700",
-        "quantity": "10",
-        "description": "Silencer 200 (new generation electro engine) ",
-        "img": "https://mazford.com/wp-content/uploads/2016/06/prod_2_deposit_opt-300x300.jpg"
-    },
-    {
-        "name": "Air Intake Pump",
-        "price": "$356",
-        "quantity": "10",
-        "description": "AIR INTAKE PUMP (GENERAL ELECTRIC AIP-1255-2)",
-        "img": "https://mazford.com/wp-content/uploads/2016/06/prod_2_deposit_opt-300x300.jpg"
+        "img": "https://gaadilovers.com/wp-content/uploads/2020/04/pic-19.jpg",
+        "review": "Good product, easy to use. Price is lower than market. Recomanded"
     },
     {
         "name": "wheel cover",
         "price": "$500",
         "quantity": "5",
         "description": "PERFECT TITANIUM WHEEL COVER (14, 16, 18 INCHES)",
-        "img": "https://m.media-amazon.com/images/I/81RExw0HcBL._SL1500_.jpg"
+        "img": "https://freepngimg.com/thumb/car_wheel/5-2-car-wheel-png-pic.png",
+        "review": "Good product, easy to use. Price is lower than market. Recomanded"
+    },
+    {
+        "name": "Braking Blocks",
+        "price": "$345",
+        "quantity": "10",
+        "description": "Braking Blocks (MAINTENANCE KIT)",
+        "img": "https://temp3.elwebcreative.com/wp-content/uploads/2016/06/prod_12_deposit_opt_-3.jpg",
+        "review": "Good product, easy to use"
+    },
+    {
+        "name": "Silencer 200",
+        "price": "$700",
+        "quantity": "10",
+        "description": "Silencer 200 (new generation electro engine) ",
+        "img": "https://mazford.com/wp-content/uploads/2016/06/prod_2_deposit_opt-300x300.jpg",
+        "review": "Good product, easy to use"
+    },
+    {
+        "name": "Air Intake Pump",
+        "price": "$356",
+        "quantity": "10",
+        "description": "AIR INTAKE PUMP (GENERAL ELECTRIC AIP-1255-2)",
+        "img": "https://mazford.com/wp-content/uploads/2016/06/prod_2_deposit_opt-300x300.jpg",
+        "review": "Good product, easy to use"
     }
 ]
