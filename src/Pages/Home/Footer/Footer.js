@@ -18,7 +18,13 @@ const Footer = () => {
                     <a class="link link-hover">About us</a>
                     <a class="link link-hover">Contact</a>
                     <a class="link link-hover">Jobs</a>
-                    <a class="link link-hover">Press kit</a>
+                </div>
+                <div>
+                    <span class="footer-title">Adress</span>
+                    <a class="link link-hover">Sector#11, uttara Dhaka</a>
+                    <a class="link link-hover">Gariv-E-Newaz Road</a>
+                    <a class="link link-hover">Email: machanicshop@gmail.com</a>
+                    <a class="link link-hover">Phone: +8801977778888</a>
                 </div>
                 <div>
                     <span class="footer-title">Legal</span>

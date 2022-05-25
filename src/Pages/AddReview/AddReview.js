@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Pusrchase = () => {
+const AddReview = () => {
     return (
         <div>
-            <h3>purchase</h3>
+            <h3>review</h3>
         </div>
     );
 };
 
-export default Pusrchase;
+export default AddReview;

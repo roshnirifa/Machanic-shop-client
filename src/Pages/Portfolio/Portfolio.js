@@ -31,10 +31,10 @@ const Portfolio = () => {
                     <p>9. Monogodb</p>
                 </div>
                 <div>
-                    <h1 className='text-3xl font-bold'>Projects</h1>
-                    <li> <a href="https://phonezone-api.netlify.app/" > PhoneZone</a></li>
-                    <li>  <a href="https://roshnirifa.github.io/assignment-2/"></a>Influencer-gears</li>
-                    <li><a href="https://warehouse-d5a66.web.app/">WareHouse</a>
+                    <h1 className='text-3xl font-bold mb-5'>Projects</h1>
+                    <li className='text-blue-700'><a href="https://phonezone-api.netlify.app/" > PhoneZone</a></li>
+                    <li className='text-blue-700'> <a href="https://roshnirifa.github.io/assignment-2/" ></a>Influencer-gears</li>
+                    <li className='text-blue-700'><a href="https://warehouse-d5a66.web.app/">WareHouse</a>
                     </li>
                 </div>
             </div>

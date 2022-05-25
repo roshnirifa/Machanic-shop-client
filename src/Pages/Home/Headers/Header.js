@@ -30,13 +30,6 @@ const Header = () => {
                         {
                             user && <li><Link to='/dashboard'>Dashboard</Link></li>
                         }
-                        {
-                            user && <li><Link to='/myOrder'>My Order</Link></li>
-                        }
-                        {
-                            user && <li><Link to='/profile'>Profile</Link></li>
-                        }
-
                         <li><Link to='/portfolio'>My Portfolio</Link></li>
                         <li><Link to='/login'>Login</Link></li>
 
@@ -53,12 +46,7 @@ const Header = () => {
                     {
                         user && <li><Link to='/dashboard'>Dashboard</Link></li>
                     }
-                    {
-                        user && <li><Link to='/myOrder'>My Order</Link></li>
-                    }
-                    {
-                        user && <li><Link to='/profile'>Profile</Link></li>
-                    }
+
                     <li><Link to='/portfolio'>My Portfolio</Link></li>
                     <li>
                         {user ? <button className='btn btn-ghost' onClick={logout}>Sign Out</button> :
