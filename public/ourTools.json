@@ -16,20 +16,20 @@
         "review": "Good product, easy to use. Price is lower than market. Recomanded"
     },
     {
-        "name": "wheel cover",
-        "price": "$500",
-        "quantity": "5",
-        "description": "PERFECT TITANIUM WHEEL COVER (14, 16, 18 INCHES)",
-        "img": "https://freepngimg.com/thumb/car_wheel/5-2-car-wheel-png-pic.png",
-        "review": "Good product, easy to use. Price is lower than market. Recomanded"
-    },
-    {
         "name": "Braking Blocks",
         "price": "$345",
         "quantity": "10",
         "description": "Braking Blocks (MAINTENANCE KIT)",
         "img": "https://temp3.elwebcreative.com/wp-content/uploads/2016/06/prod_12_deposit_opt_-3.jpg",
         "review": "Good product, easy to use"
+    },
+    {
+        "name": "wheel cover",
+        "price": "$500",
+        "quantity": "5",
+        "description": "PERFECT TITANIUM WHEEL COVER (14, 16, 18 INCHES)",
+        "img": "https://freepngimg.com/thumb/car_wheel/5-2-car-wheel-png-pic.png",
+        "review": "Good product, easy to use. Price is lower than market. Recomanded"
     },
     {
         "name": "Silencer 200",
