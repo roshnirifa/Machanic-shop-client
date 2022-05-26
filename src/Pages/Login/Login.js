@@ -17,7 +17,7 @@ const Login = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
     const navigate = useNavigate();
     const location = useLocation();
-    let from = location.state?.from?.pathname || "/home";
+    let from = location.state?.from?.pathname || "/";
 
     let signInError;
 
@@ -32,7 +32,7 @@ const Login = () => {
         return <Loading></Loading>;
     }
 
-    if (gUser) {
+    if (gUser || user) {
         return (
             navigate(from, { replace: true })
 

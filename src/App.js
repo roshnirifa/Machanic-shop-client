@@ -13,11 +13,11 @@ import { ToastContainer } from 'react-toastify';
 import SignUp from './Pages/SignUp/SignUp';
 import Dashboard from './Pages/DashBoard/Dashboard';
 import Profile from './Pages/Profile/Profile';
-import MyOrder from './Pages/MyOrder/MyOrder';
 import Portfolio from './Pages/Portfolio/Portfolio';
 import RequriedAuth from './Pages/Login/RequriedAuth';
 import PurchaseDetail from './Pages/Home/PurchaseDetail/PurchaseDetail';
 import AddReview from './Pages/AddReview/AddReview';
+import MyOrder from './Pages/MyOrder/MyOrder';
 
 function App() {
   return (
@@ -38,9 +38,17 @@ function App() {
             <PurchaseDetail></PurchaseDetail>
           </RequriedAuth>
         }></Route>
-        <Route path='dashboard' element={<Dashboard></Dashboard>}></Route>
-        <Route path='myprofile' element={<Profile></Profile>}></Route>
-        <Route path='addReview' element={<AddReview></AddReview>}></Route>
+        <Route path='/dashboard' element={
+          <RequriedAuth>
+            <Dashboard></Dashboard>
+          </RequriedAuth>
+        }>
+          <Route index element={<MyOrder></MyOrder>}></Route>
+          <Route path='addReview' element={<AddReview></AddReview>}></Route>
+
+          <Route path='myprofile' element={<Profile></Profile>}></Route>
+        </Route>
+        <Route path='MyReview' element={<AddReview></AddReview>}></Route>
         <Route path='portfolio' element={<Portfolio></Portfolio>}></Route>
         <Route path='login' element={<Login></Login>}></Route>
         <Route path='signup' element={<SignUp></SignUp>}></Route>
