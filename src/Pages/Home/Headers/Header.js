@@ -10,6 +10,7 @@ const Header = () => {
     const [user, loading, error] = useAuthState(auth);
     const logout = () => {
         signOut(auth);
+        localStorage.removeItem('accessToken')
     };
 
     return (
@@ -31,7 +32,7 @@ const Header = () => {
                             user && <li><Link to='/dashboard'>Dashboard</Link></li>
                         }
                         {
-                            user && <li><Link to='/MyReview'>My Review</Link></li>
+                            user && <li><Link to='/review'>My Review</Link></li>
                         }
                         <li><Link to='/portfolio'>My Portfolio</Link></li>
                         <li><Link to='/login'>Login</Link></li>
@@ -50,7 +51,7 @@ const Header = () => {
                         user && <li><Link to='/dashboard'>Dashboard</Link></li>
                     }
                     {
-                        user && <li><Link to='/MyReview'>My Review</Link></li>
+                        user && <li><Link to='/review'>My Review</Link></li>
                     }
 
 

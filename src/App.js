@@ -18,6 +18,7 @@ import RequriedAuth from './Pages/Login/RequriedAuth';
 import PurchaseDetail from './Pages/Home/PurchaseDetail/PurchaseDetail';
 import AddReview from './Pages/AddReview/AddReview';
 import MyOrder from './Pages/MyOrder/MyOrder';
+import Review from './Pages/Home/Review/Review';
 
 function App() {
   return (
@@ -45,10 +46,9 @@ function App() {
         }>
           <Route index element={<MyOrder></MyOrder>}></Route>
           <Route path='addReview' element={<AddReview></AddReview>}></Route>
-
           <Route path='myprofile' element={<Profile></Profile>}></Route>
         </Route>
-        <Route path='MyReview' element={<AddReview></AddReview>}></Route>
+        <Route path='review' element={<Review></Review>}></Route>
         <Route path='portfolio' element={<Portfolio></Portfolio>}></Route>
         <Route path='login' element={<Login></Login>}></Route>
         <Route path='signup' element={<SignUp></SignUp>}></Route>

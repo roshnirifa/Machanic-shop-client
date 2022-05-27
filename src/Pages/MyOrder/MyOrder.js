@@ -9,7 +9,12 @@ const MyOrder = () => {
     console.log(email);
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/purchase/${email}`)
+            fetch(`http://localhost:5000/purchase/${email}`, {
+                method: 'GET',
+                headers: {
+                    'authorization': `Bearer ${localStorage.getItem('accessToken')}`
+                }
+            })
                 .then(res => res.json())
                 .then(data => setOrders(data))
         }
@@ -22,11 +27,14 @@ const MyOrder = () => {
 
                     <thead>
                         <tr>
-                            <th>1</th>
+                            <th></th>
                             <th>Product Name</th>
                             <th>Quantity</th>
+                            <th> Price </th>
                             <th> Email </th>
                             <th> Action </th>
+                            <th> Payment </th>
+
                         </tr>
                     </thead>
                     <tbody>
@@ -35,8 +43,10 @@ const MyOrder = () => {
                                 <th>{index + 1}</th>
                                 <th>{order.productName}</th>
                                 <th> {order.quantity}</th>
+                                <th> {order.price}</th>
                                 <th> {order.email} </th>
-                                <th> <button className='btn bg-red-400'> X </button> </th>
+                                <th> <button className='btn bg-red-500'> X </button> </th>
+                                <th> <button className='btn'> Pay </button> </th>
 
                             </tr>)
                         }
