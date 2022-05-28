@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { confirmAlert } from 'react-confirm-alert';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast } from 'react-toastify';
 import auth from '../../firebase_init';
 
 const MyOrder = () => {
@@ -19,6 +21,43 @@ const MyOrder = () => {
                 .then(data => setOrders(data))
         }
     }, [user])
+
+    let orderDelete = (id) => {
+
+        confirmAlert({
+            title: 'Confirm For Delete',
+            message: 'Are you sure ?',
+            buttons: [
+                {
+                    label: 'Yes',
+                    onClick: () => {
+                        // console.log(id);
+
+                        fetch(`http://localhost:5000/purches/${id}`, {
+                            method: 'DELETE',
+                            headers: {
+                                'content-type': 'application/json'
+                            }
+                        })
+                            .then(res => res.json())
+                            .then(data => {
+                                console.log(data);
+                                toast.warning(' Parts Delete Successfully ');
+                            })
+                    }
+                },
+                {
+                    label: 'No',
+                    onClick: () => {
+                        toast.warn(' Delete Cancel ');
+                    }
+                }
+            ]
+        });
+
+    }
+
+
     return (
         <div>
             <h3>My Orders: {orders?.length}</h3>
@@ -45,7 +84,7 @@ const MyOrder = () => {
                                 <th> {order.quantity}</th>
                                 <th> {order.price}</th>
                                 <th> {order.email} </th>
-                                <th> <button className='btn bg-red-500'> X </button> </th>
+                                <th> <button onClick={() => orderDelete(order._id)} className='btn bg-red-500'> X </button> </th>
                                 <th> <button className='btn'> Pay </button> </th>
 
                             </tr>)

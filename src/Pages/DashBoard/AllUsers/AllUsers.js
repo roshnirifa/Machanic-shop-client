@@ -24,7 +24,7 @@ const AllUsers = () => {
                             <th></th>
                             <th>Name</th>
                             <th>Job</th>
-                            <th>Favorite Color</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>

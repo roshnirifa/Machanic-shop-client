@@ -56,10 +56,16 @@ const Header = () => {
 
 
                     <li><Link to='/portfolio'>My Portfolio</Link></li>
+
                     <li>
                         {user ? <button className='btn btn-ghost font-bold' onClick={logout}>Sign Out</button> :
                             <Link to='/login'>Login</Link>}
+
                     </li>
+                    <li>
+                        <p> {user && user.displayName}</p>
+                    </li>
+
                 </ul>
             </div>
 

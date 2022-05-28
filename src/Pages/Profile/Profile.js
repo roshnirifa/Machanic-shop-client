@@ -1,5 +1,6 @@
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast } from 'react-toastify';
 import auth from '../firebase_init';
 
 const Profile = () => {
@@ -10,8 +11,33 @@ const Profile = () => {
         const number = event.target.number.value;
         const city = event.target.city.value;
         const location = event.target.location.value;
-        const linkdin = event.target.linkdin.value;
-        console.log(city, number, location, linkdin);
+        const linkedin = event.target.linkedin.value;
+        let data = {
+            name: user?.displayName,
+            email: user?.email,
+
+            city: city,
+            number: number,
+            location: location,
+            linkedin: linkedin
+        }
+        console.log(data);
+
+        fetch('http://localhost:5000/profile', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                toast.success('Profile Updated Done');
+                event.target.reset();
+
+            });
+
     }
     return (
 
@@ -31,7 +57,7 @@ const Profile = () => {
                 <input type="text" placeholder="Linkedin" name='linkedin' class="input input-bordered w-full  mb-3" /> <br />
                 <label >Number:</label>
                 <input type="Number" placeholder="Number" class="input input-bordered w-full  mb-3" name='number' /> <br />
-                <input className='btn btn-primary w-full ' type="submit" value='Submit' />
+                <input className='btn btn-primary w-full ' type="submit" value='Update Profile' />
             </form>
         </div>
 
