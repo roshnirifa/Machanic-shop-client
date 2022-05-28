@@ -1,15 +1,11 @@
 ### Machanic Shop
 
-### Website Feachars
+### Website Features
 * Admin/  User panel
 * Admin can see the all products, added products, delete products
 * user can log in by name email or google
 * once user loged in they can see their information
 * user can added item and cencel their product
-
-
-
-
 
 
 ### Website framework/tools
@@ -27,3 +23,4 @@
 ### Deploy
 * Firebase
 * Heroku
+Live site [https://machanic-shop.web.app/](https://machanic-shop.web.app/)

@@ -11,7 +11,7 @@ const MyOrder = () => {
     console.log(email);
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/purchase/${email}`, {
+            fetch(`https://young-springs-64446.herokuapp.com/purchase/${email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -31,9 +31,9 @@ const MyOrder = () => {
                 {
                     label: 'Yes',
                     onClick: () => {
-                        // console.log(id);
 
-                        fetch(`http://localhost:5000/purches/${id}`, {
+
+                        fetch(`https://young-springs-64446.herokuapp.com/purches/${id}`, {
                             method: 'DELETE',
                             headers: {
                                 'content-type': 'application/json'

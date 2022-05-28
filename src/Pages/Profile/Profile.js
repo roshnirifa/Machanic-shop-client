@@ -23,7 +23,7 @@ const Profile = () => {
         }
         console.log(data);
 
-        fetch('http://localhost:5000/profile', {
+        fetch('https://young-springs-64446.herokuapp.com/profile', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

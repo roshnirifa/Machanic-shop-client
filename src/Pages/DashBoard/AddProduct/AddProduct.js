@@ -9,7 +9,7 @@ const AddProduct = () => {
         const img = event.target.img.value;
         const description = event.target.description.value;
         // console.log(productName, price, quantiy, description);
-        const url = 'http://localhost:5000/tools';
+        const url = 'https://young-springs-64446.herokuapp.com/tools';
 
         fetch(url, {
             method: 'POST',

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { toast } from 'react-toastify';
+import React from 'react';
+
 
 
 const UseAllProruct = ({ tool }) => {
@@ -7,7 +7,7 @@ const UseAllProruct = ({ tool }) => {
 
     let deleteTools = (id) => {
         console.log(id);
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://young-springs-64446.herokuapp.com/delete/${id}`, {
             method: 'DELETE',
             headers: {
                 'content-type': 'application/json'

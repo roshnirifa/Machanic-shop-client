@@ -15,14 +15,14 @@ const PurchaseDetail = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/tools/${purchaesId}`)
+        fetch(`https://young-springs-64446.herokuapp.com/tools/${purchaesId}`)
             .then(res => res.json())
             .then(data => {
                 setData(data);
             })
     }, [purchaesId])
 
-    // let { data, isLoading, refetch } = useQuery('data', () => fetch(`http://localhost:5000/tools/${purchaesId}`).then(res => res.json()))
+    // let { data, isLoading, refetch } = useQuery('data', () => fetch(`https://young-springs-64446.herokuapp.com/tools/${purchaesId}`).then(res => res.json()))
 
     // if (isLoading) {
     //     return <Loading> </Loading>
@@ -62,7 +62,7 @@ const PurchaseDetail = () => {
                 price: newPrice,
                 number: number
             }
-            axios.post('http://localhost:5000/purchase', postedData)
+            axios.post('https://young-springs-64446.herokuapp.com/purchase', postedData)
                 .then(res => {
                     console.log(res);
                     alert('product orderd done')
