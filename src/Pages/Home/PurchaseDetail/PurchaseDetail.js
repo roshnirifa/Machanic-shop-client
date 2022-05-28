@@ -28,24 +28,23 @@ const PurchaseDetail = () => {
     //     return <Loading> </Loading>
     // }
 
-    let price = data.price;
-    console.log(price);
-
-
     const handleSubmit = event => {
         event.preventDefault();
-
+        let price = parseInt(data?.price);
+        console.log(price);
         setError('');
         const address = event.target.address.value;
         const number = event.target.number.value;
-        const quantity = event.target.quantity.value;
-        console.log(quantity);
+        const quantity = parseInt(event.target.quantity.value);
+        // console.log(quantity);
         // const productName = event.target.productName.value;
 
-        let newPrice = quantity * parseInt(price);
+        let newPrice = quantity * price;
+        console.log(newPrice);
+        console.log(typeof (quantity), typeof (price));
 
 
-        console.log(address, number, quantity);
+        // console.log(address, number, quantity);
         if (quantity < data.minQuantity) {
             setError(`You cant purchase less than ${data.minQuantity} `)
 
@@ -60,12 +59,14 @@ const PurchaseDetail = () => {
                 email: user.email,
                 address: address,
                 productName: data.name,
-                price: parseInt(newPrice),
+                price: newPrice,
                 number: number
             }
             axios.post('http://localhost:5000/purchase', postedData)
                 .then(res => {
                     console.log(res);
+                    alert('product orderd done')
+                    event.target.reset()
                 })
 
         }

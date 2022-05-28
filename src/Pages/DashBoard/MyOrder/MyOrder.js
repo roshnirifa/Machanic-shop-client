@@ -42,7 +42,7 @@ const MyOrder = () => {
                             .then(res => res.json())
                             .then(data => {
                                 console.log(data);
-                                toast.warning(' Parts Delete Successfully ');
+                                toast.error(' Parts Delete Successfully ');
                             })
                     }
                 },
@@ -69,7 +69,7 @@ const MyOrder = () => {
                             <th></th>
                             <th>Product Name</th>
                             <th>Quantity</th>
-                            <th> Price </th>
+
                             <th> Email </th>
                             <th> Action </th>
                             <th> Payment </th>
@@ -82,7 +82,7 @@ const MyOrder = () => {
                                 <th>{index + 1}</th>
                                 <th>{order.productName}</th>
                                 <th> {order.quantity}</th>
-                                <th> {order.price}</th>
+
                                 <th> {order.email} </th>
                                 <th> <button onClick={() => orderDelete(order._id)} className='btn bg-red-500'> X </button> </th>
                                 <th> <button className='btn'> Pay </button> </th>

@@ -126,7 +126,7 @@ const SignUp = () => {
                             signInError
                         }
                         <input className='btn  btn-primary w-full max-w-xs' type="submit" value='Signup' />
-                        <p className='mt-3'>Already have an account? <span className='text-primary'><Link to='/signup'>Please Login</Link></span></p>
+                        <p className='mt-3'>Already have an account? <span className='text-primary'><Link to='/login'>Please Login</Link></span></p>
                     </form>
 
 
